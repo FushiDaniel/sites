@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.intro {
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 100px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    overflow: hidden;
+    margin: 0 auto 20px; 
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 20px ;
+}
+
+.projects {
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.project-grid {
+    display: inline-grid;
+    gap: 20px;
+    justify-items: center;
+    grid-template-columns: auto auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .project-grid {
+        grid-template-columns: auto;
+    }
+}
+
+.project-card {
+    width: 100%;
+    max-width: 400px; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: transform 0.3s;
+    background: #000;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 50%;
+    
+}
+
+
+.project-card img {
+    width: 100%;
+    max-width: 550px; /* Set a maximum width for large screens */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+    opacity: 1.0;
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.735), transparent);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.3s;
+    font-weight: bold;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.highlight {
+    background: linear-gradient(120deg, rgba(255, 209, 41, 0.786) 0%, rgba(255, 227, 125, 0.823) 100%);
+    padding: 0 5px;
+    border-radius: 2px;
+    display: inline-block;
+    transform: rotate(0.7deg);
+}
+
+.highlight-green {
+    background: linear-gradient(120deg, rgba(94, 239, 58, 0.786) 0%, rgba(164, 253, 159, 0.585) 100%);
+    padding: 0 5px;
+    border-radius: 2px;
+    display: inline-block;
+    transform: rotate(0.0deg); 
+}
+
+.highlight-orange {
+    background: linear-gradient(120deg, rgba(245, 94, 0, 0.848) 0%, rgba(255, 147, 65, 0.856) 100%);
+    padding: 0 5px;
+    border-radius: 2px;
+    display: inline-block;
+    transform: rotate(-0.3deg); 
+    color: white;
+    
+}
+
+.socials {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.socials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #555;
+}
